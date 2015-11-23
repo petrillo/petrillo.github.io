@@ -1,0 +1,233 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    background-color: #fcfcfc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, a:visited {
+    color: #222;
+}
+
+#main {
+    margin: 3px auto 3px auto;
+    display: table;
+    width: 65%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #cccccc;
+}
+
+#header {
+    margin: 2px auto 10px auto;
+    width: 90%;
+}
+
+#udm_logo {
+    float: left;
+}
+
+#right-header {
+    float: right;
+    margin-top: 10px;
+}
+
+#my_name {
+    float: left;
+    font-size: 200%;
+    font-style: bold;
+    margin: 10px 10px;
+}
+
+#lang-change {
+    float: left;
+}
+
+a.lang-change {
+    margin-top: 0px;
+    background-color: #282C2F;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 40px;
+    height: 32px;
+    padding-top: 8px;
+    text-align: center;
+    border-radius: 10000px;
+    font-weight: bold;
+    font-size: 100%;
+    float: right;
+    margin-right: 6px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#title {
+    float: left;
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 90%;
+}
+
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    display: table;
+    border-spacing: 4px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: table-cell;
+    width: 10%;
+    border-radius: 4px;
+    text-align: center;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+nav > ul > li > a {
+    color: #000000;
+    font-weight: bold;
+    line-height: 56px;
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+}
+
+nav > ul > li:hover {
+    background-color: #282C2F;
+}
+
+nav > ul > li:hover > a {
+    color: #fff;
+}
+
+nav > ul > li.active {
+    background-color: #EDEDED;
+}
+
+nav > ul > li > a.active {
+    color: #000000;
+}
+
+#content {
+    margin: 20px auto auto auto;
+    width: 90%;
+}
+
+.box {
+    background-color: #fcfcfc;
+    display: inline-block;
+    width: 100%;
+    /*border: solid 1px #282C2F;
+    border-top: none;*/
+    border-radius: 5px;
+    margin: 0 0 40px 0;
+}
+
+.box h1 {
+    background-color: #282C2F;
+    color: #ffffff;
+    margin: 0px -1px 10px -1px;
+    padding: 4px 5px 4px 12px;
+    border-radius: 5px;
+}
+
+.box p {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+.box ul, ol {
+    margin-top: 0px;
+    padding: 5px 0px 0px 25px;
+}
+
+.box ul li, ol li {
+    background: inherit !important;
+    padding-bottom: 3px;
+    padding-right: 15px;
+    list-style-type: inherit !important;
+    list-style-position: inherit !important;
+    list-style-image: inherit !important;
+}
+
+ul.links > li {
+    margin-bottom: 10px;
+}
+
+table.uj_table {
+    border: none;
+    width: 100%;
+}
+
+ol.ref
+{
+    list-style-type: none;
+    counter-reset: refCounter;
+    margin-top: 0px;
+    padding: 5px 0px 0px 0px;
+}
+ol.ref li:before
+{
+    content: "[" counter(refCounter, decimal) "] ";
+    counter-increment: refCounter;
+    float: left;
+    width: 2em;
+}
+
+ol.ref li
+{
+    display: block;
+    padding-top: 10px;
+    /*font-size: 13px;*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*********************************************************
+    Publication Links
+ *********************************************************/
+a.urlLink
+{
+    background: url("../img/url.png") center right no-repeat;
+    padding-right: 15px;
+    margin-right: 3px;
+}
+a.pdfLink
+{
+    background: url("../img/pdf.png") center right no-repeat;
+    padding-right: 15px;
+    margin-right: 3px;
+}
+a.pptLink
+{
+    background: url("../img/ppt.png") center right no-repeat;
+    padding-right: 15px;
+    margin-right: 3px;
+}
+span.award
+{
+    background: url("../img/award.png") center right no-repeat;
+    background-size: 25px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    min-width: 25px;
+}
